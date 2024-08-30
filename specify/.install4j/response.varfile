@@ -1,0 +1,6 @@
+# install4j response file for Specify 6.8.03
+executeLauncherAction=none
+sys.adminRights$Boolean=false
+sys.installationDir=/Users/g584f396/Applications/Specify6803Clean
+sys.languageId=en
+sys.programGroupDisabled$Boolean=true
