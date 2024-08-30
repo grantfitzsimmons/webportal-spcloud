@@ -77,21 +77,15 @@ Once done, you can find which export mappings are available in the database by r
 python ../../FindAvailableExportMappings.py
 ```
 
-You can then build a command to export data from a Specify database by running the `BuildCommand.py` script.
+You can build a command to update or export data from a Specify database by running the `BuildCommand.py` script.
 
 ```bash
 python ../../BuildCommand.py
 ```
 
-If you encounter any issues, the logs are stored in the `specify/bin/logs` directory.
+If you encounter any issues, the logs are stored in the `specify/bin/logs` directory. You can also view the logs in the terminal you are running the commands in.
 
-## Building exports for Specify-Hosted Web Portals
-
-Using the `BuildCommand.py` script, you can build a command to export data from a Specify database. This command can then be used to export data from a Specify database using the `ExpCmdLine` utility. 
-
-The following table shows the parameters and arguments of the `ExpCmdLine` utility in case you wish to use it directly.
-
-Parameters and arguments of the `ExpCmdLine` utility are as follows:
+## Parameters and arguments for `ExpCmdLine`
 
 | Parameter | Argument                                                                 | Required                       |
 |-----------|--------------------------------------------------------------------------|--------------------------------|
@@ -140,9 +134,6 @@ You can then run the generated command to perform the export. Note the syntax fo
 ```bash
 ❯ ./ExpCmdLine -u "spfishadmin" -p "testuser" -d ku_fish -m "DwCKUI" -a ExportForWebPortal -l logs/ku_fish_2024-08-30_13-09-05.log -h localhost -o ku_fish_2024-08-30.txt -w ./specify
 ```
-
-
-
 
 
 # FindAvailableExportMappings.py
