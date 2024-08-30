@@ -2,8 +2,6 @@ import mariadb
 import getpass
 import subprocess
 import time
-import os
-import signal
 
 def create_ssh_tunnel(ssh_host, ssh_user, ssh_password, ssh_port=22):
     """Create an SSH tunnel to the MySQL server."""
@@ -12,7 +10,6 @@ def create_ssh_tunnel(ssh_host, ssh_user, ssh_password, ssh_port=22):
         ssh_command = [
             "ssh",
             "-N",  # Do not execute a remote command
-            "-L", "3306:127.0.0.1:3306",  # Forward local port 3306 to remote MySQL server
             f"{ssh_user}@{ssh_host}",
             "-p", str(ssh_port)
         ]
@@ -95,8 +92,14 @@ def main():
     password = getpass.getpass("Enter the MariaDB password: ")
     database = input("Enter the database name: ")
 
+    # Prompt for the database host (default to localhost if not using SSH)
+    if ssh_needed == 'yes':
+        db_host = input("Enter the database host (default is 127.0.0.1): ") or '127.0.0.1'
+    else:
+        db_host = input("Enter the database host (default is localhost): ") or 'localhost'
+
     # Establish database connection
-    connection = get_database_connection('127.0.0.1' if ssh_needed == 'yes' else 'localhost', username, password, database)
+    connection = get_database_connection(db_host, username, password, database)
 
     if connection:
         # Fetch and display schema mappings
