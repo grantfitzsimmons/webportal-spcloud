@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link type="text/css" media="screen" href="../../main.css" rel="stylesheet">
+    <meta name="generator" content="Helen">
+    <title>Email Preferences</title>
+  </head>
+  <body bgcolor="#ffffff">
+    <table border="0" width="100%" background="../../images/topbar.png">
+      <tr>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
+    </table>
+    <h2>
+       <img src="../../images/interactions.png" alt="">&nbsp;Interactions
+    </h2>
+    <p>
+       <a name="prefs_loan" id="prefs_loan"></a>Default settings for fields on the Loan and other
+      Interactions forms can be set in the Interactions Preference. New Interactions will include
+      the default values, which are editable.
+    </p>
+    <ul>
+      <li class="michaelschanges">
+        For Mac: Choose <em>Specify &gt; Preferences &gt; Interactions.</em>
+      </li>
+      <li class="michaelschanges">
+        For Windows and Linux: Choose <em>Edit &gt; Preferences &gt; Interactions</em>.
+      </li>
+    </ul>
+    <p>
+       &nbsp;
+    </p>
+    <p align="center">
+       <img src="../../images/pref_loan.png">
+    </p>
+    <p align="center" class="imgcaption">
+       Interactions Preference
+    </p>
+    <p>
+       &nbsp;
+    </p>
+    <ul>
+      <li>
+        <strong>Due in Months</strong> can be set between one and 60 months.
+      </li>
+      <li style=" list-style-type: none; list-style-image: none;">
+        <br>
+      </li>
+      <li>
+        <strong>Shipment Method</strong> choices are: 
+        <ul>
+          <li>
+            By Hand
+          </li>
+          <li>
+            DHL
+          </li>
+          <li>
+            Fed Ex
+          </li>
+          <li>
+            UPS
+          </li>
+          <li>
+            USPS
+          </li>
+        </ul>
+      </li>
+      <li style=" list-style-type: none; list-style-image: none;">
+        <p>
+           The Shipment Method list is a <a href="../PickList/system_picklist.html">System Pick
+          List</a> and can be edited using the pick list editor.
+        </p>
+      </li>
+      <li>
+        <strong>Shipped By</strong> is a Query Combo Box to the agent table. This allows data to be
+        searched and chosen from the agent table, not typed directly into the box. It is possible
+        to type data directly into the box, but the box will not accept the data; the data must
+        first be added to the table by clicking the <img height="16" alt="add" src=
+        "../../images/add.png" width="16">&nbsp;(add) button and creating a new record. 
+        <blockquote>
+          <p>
+             <u>Search for an existing agent</u>
+          </p>
+          <blockquote>
+            <p>
+               Using a Query Combo Box
+            </p>
+            <ol>
+              <li>
+                Type the first letter, or first few letters of the name in the box, then either
+                click on the <img height="16" alt="down" src="../../images/Down16x16.png" width=
+                "16"> button or use the down-arrow key on the keyboard. A list of agent matching
+                the typed letter(s) will appear.
+              </li>
+            </ol>
+            <blockquote>
+              <p>
+                 If Specify can not find a match based on the typed letters then an <img height=
+                "27" alt="add" src="../../images/add_form.png" width="81">&nbsp;button will appear.
+                Click the button or press the enter key to add a new record.
+              </p>
+              <p>
+                 If the required name is not in the resulting list, either press the enter key when
+                'Add ...' is in focus, or click the <img height="16" alt="add" src=
+                "../../images/add.png" width="16">&nbsp;(add) button, to add a new record.
+              </p>
+              <p>
+                 Pressing the esc (escape) key will cancel the list box.
+              </p>
+              <blockquote>
+                <p>
+                   <strong><em>Note:</em></strong> Type more letters into the box to reduce the
+                  results and expedite the search.
+                </p>
+              </blockquote>
+            </blockquote>
+            <p>
+               Using the <em>Search</em> button (these buttons are not available with keystroke
+              entry):
+            </p>
+            <ol>
+              <li>
+                Click on the <img height="16" alt="search" src="../../images/Search-16x16.png"
+                width="16"> (Search) button. A search dialog will appear.
+              </li>
+              <li>
+                Type in either the entire name or the first few letters of the search followed by
+                an asterisk (*).
+              </li>
+              <li>
+                Select a record from the results.
+              </li>
+            </ol>
+          </blockquote>
+          <p>
+             <u>Add a new agent:</u>
+          </p>
+          <ol>
+            <li>
+              Click on the<img height="16" alt="add" src="../../images/add.png" width="16"> (add)
+              button and enter data into the resulting dialog.
+            </li>
+          </ol>
+          <p>
+             &nbsp;
+          </p>
+          <p>
+             <u>Edit an existing agent record:</u>
+          </p>
+          <ol>
+            <li>
+              Choose a record from the list.
+            </li>
+            <li>
+              Click the <img height="16" alt="edit" src="../../images/Edit-2-16x16.png" width="16">
+              (edit) icon to open the table in an editable dialog.
+            </li>
+          </ol>
+          <p>
+             &nbsp;
+          </p>
+        </blockquote>
+      </li>
+    </ul>
+    <p>
+       <i>Default Source Table</i> allows users to choose the source for their interactions based
+      on the appropriate table (Collection Object or Preparations) and field with an identifier.
+      For instance, if preparations in the collection include an identifier and the user wishes to
+      reference that identifier then they will choose 'Preparation' as the Default Source for the
+      Table.
+    </p>
+    <p>
+       <b><u>Note:</u></b>&nbsp;Interactions are scoped to the Discipline level and therefore the
+      settings in the Interactions Preference will affect all other users in the Collection and
+      Discipline. If collections within the Discipline use different tables this setting should be
+      set to 'Ask'.
+    </p>
+    <ul>
+      <li>
+        <strong>Table</strong> offers the following choices: 
+        <ul>
+          <li>
+            <b>Ask</b> -&nbsp;indicates that either the Collection Object or Preparations table may
+            be used in Interactions and allows the user to choose the appropriate table at the time
+            that the interaction is created
+          </li>
+          <li>
+            <b>Collection Object</b> - indicates that the Collection Object table is the only one
+            used for Interactions for the Collections in the Discipline.
+          </li>
+          <li>
+            <b>Preparation</b> - indicates that the Preparation table is the only one used for
+            Interactions for the Collections in the Discipline.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+       <i>Item Identifier Fields</i>&nbsp;allows users to choose the appropriate field for the
+      identifier based on the Default Source Table choice and database setup.&nbsp;
+    </p>
+    <ul>
+      <li>
+        Collection Object table has four fields available to use as an identifier field&nbsp;but
+        fields that&nbsp;are not used and hidden they will not be presented as choices. If the
+        field you require is not shown as a choice you can <a href=
+        "../SchemaConfig/schema_config.html#hide_table">Unhide</a> the field using the Schema
+        Configuration tool. The most common fields are shown below: 
+        <ul>
+          <li>
+            Alt Cat Number
+          </li>
+          <li>
+            Catalog Number
+          </li>
+          <li>
+            GUID
+          </li>
+          <li>
+            Project Number
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p style=" margin-left: 40.0px;">
+       Other possible fields for IDs in the Collection Object table include Bar Code, Modifier,
+      Name, Project Number, Text1, Text2 and Text 3. Catalog Number and GUID fields are forced to
+      be unique in the system
+    </p>
+    <ul>
+      <li>
+        Preparation table has two fields available to use as a unique identifier field&nbsp;but
+        fields that&nbsp;are not used and hidden they will not be presented as choices. If the
+        field you require is not shown as a choice you can <a href=
+        "../SchemaConfig/schema_config.html#hide_table">unhide</a> the field using the Schema
+        Configuration tool. 
+        <ul>
+          <li>
+            Barcode
+          </li>
+          <li>
+            GUID
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p style=" margin-left: 40.0px;">
+       Other possible fields for IDs in the Preparation table include Sample Number, Text1, Text2
+      and Text 3, Text 4 ,Text 5, Text 6, Text 7, Text 8, Text 9. Barcode and GUID are forced to be
+      unique in the system.
+    </p>
+    <p>
+       &nbsp;
+    </p>
+  </body>
+</html>
