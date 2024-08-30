@@ -1,0 +1,14 @@
+20240830_124007: starting with args [ -u spfishadmin -p ******** -d ku_fish -m DwCKUI -a Update -l logs/ku_fish_2024-08-30_12-40-02.log -h localhost -o ku_fish_2024-08-30.txt -w ./specify]...
+20240830_124007: Master key set
+20240830_124007: Got master
+20240830_124007: logged in
+20240830_124007: Versions OK
+20240830_124007: good user
+20240830_124007: got mapping id
+20240830_124007: got collection name
+20240830_124011: context established
+20240830_124011: mapping can be processed
+20240830_124014: Got mapping status: Records deleted=0. Records added or updated=43098
+20240830_124014: Updating cache...
+20240830_125406: ...updated cache.
+20240830_125406: ...exiting successfully.
