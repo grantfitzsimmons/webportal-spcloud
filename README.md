@@ -55,6 +55,15 @@ Web Portal zip package by using the appropriate argument to the –a parameter.
 
 **A Specify manager-level user account is required to use this tool.**
 
+## Prerequisites
+
+- Java JRE 8 
+    - On Ubuntu, you can run `sudo apt install openjdk-8-jdk`
+- MariaDB 
+    - Run `sudo apt install libmariadb-dev` to install the MariaDB client library
+    - After this, run `pip3 install mariadb` to install the MariaDB Python connector
+- Python 3.10 or later
+
 # Using This Utility
 
 _These steps assume you are using a Linux or macOS system._
